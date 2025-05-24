@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- <button onclick="toggleDarkMode()">Changer de mode</button> -->
+
+        <p class="sr">sr</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="" class="active">Accueil</a></li>
+          <li><a href="projet.html" class="desactive">Projet</a></li>
+        </ul>
+      </nav>
+      <div class="color">
+        <button onclick="toggleDarkMode()">
+          <svg
+          width="800px"
+          height="800px"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h48v48H0z" fill="none" />
+          <g id="Shopicon">
+            <path
+              d="M24,44c8.002,0.093,15.587-5.043,18.532-12.469l-2.605-2.605C26.94,34.271,13.732,21.053,19.073,8.073l-2.604-2.605
+                    C-3.688,14,2.123,43.714,24,44z"
+            />
+          </g>
+        </svg>
+      </button>
+        <button onclick="toggleDarkMode()">
+          <svg
+        class="mode-light"
+          fill="#000000"
+          width="800px"
+          height="800px"
+          viewBox="-7.5 0 32 32"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>dark</title>
+          <path
+            d="M9.75 8.25v0.219c0 0.844-0.375 1.25-1.156 1.25s-1.125-0.406-1.125-1.25v-0.219c0-0.813 0.344-1.219 1.125-1.219s1.156 0.406 1.156 1.219zM12.063 9.25l0.156-0.188c0.469-0.688 1.031-0.781 1.625-0.344 0.625 0.438 0.719 1.031 0.25 1.719l-0.188 0.156c-0.469 0.688-1.031 0.781-1.625 0.313-0.625-0.438-0.688-0.969-0.219-1.656zM5 9.063l0.125 0.188c0.469 0.688 0.406 1.219-0.188 1.656-0.625 0.469-1.219 0.375-1.688-0.313l-0.125-0.156c-0.469-0.688-0.406-1.281 0.188-1.719 0.625-0.438 1.219-0.281 1.688 0.344zM8.594 11.125c2.656 0 4.844 2.188 4.844 4.875 0 2.656-2.188 4.813-4.844 4.813-2.688 0-4.844-2.156-4.844-4.813 0-2.688 2.156-4.875 4.844-4.875zM1.594 12.5l0.219 0.063c0.813 0.25 1.063 0.719 0.844 1.469-0.25 0.75-0.75 0.969-1.531 0.719l-0.219-0.063c-0.781-0.25-1.063-0.719-0.844-1.469 0.25-0.75 0.75-0.969 1.531-0.719zM15.375 12.563l0.219-0.063c0.813-0.25 1.313-0.031 1.531 0.719s-0.031 1.219-0.844 1.469l-0.188 0.063c-0.813 0.25-1.313 0.031-1.531-0.719-0.25-0.75 0.031-1.219 0.813-1.469zM8.594 18.688c1.469 0 2.688-1.219 2.688-2.688 0-1.5-1.219-2.719-2.688-2.719-1.5 0-2.719 1.219-2.719 2.719 0 1.469 1.219 2.688 2.719 2.688zM0.906 17.281l0.219-0.063c0.781-0.25 1.281-0.063 1.531 0.688 0.219 0.75-0.031 1.219-0.844 1.469l-0.219 0.063c-0.781 0.25-1.281 0.063-1.531-0.688-0.219-0.75 0.063-1.219 0.844-1.469zM16.094 17.219l0.188 0.063c0.813 0.25 1.063 0.719 0.844 1.469s-0.719 0.938-1.531 0.688l-0.219-0.063c-0.781-0.25-1.063-0.719-0.813-1.469 0.219-0.75 0.719-0.938 1.531-0.688zM3.125 21.563l0.125-0.188c0.469-0.688 1.063-0.75 1.688-0.313 0.594 0.438 0.656 0.969 0.188 1.656l-0.125 0.188c-0.469 0.688-1.063 0.75-1.688 0.313-0.594-0.438-0.656-0.969-0.188-1.656zM13.906 21.375l0.188 0.188c0.469 0.688 0.375 1.219-0.25 1.656-0.594 0.438-1.156 0.375-1.625-0.313l-0.156-0.188c-0.469-0.688-0.406-1.219 0.219-1.656 0.594-0.438 1.156-0.375 1.625 0.313zM9.75 23.469v0.25c0 0.844-0.375 1.25-1.156 1.25s-1.125-0.406-1.125-1.25v-0.25c0-0.844 0.344-1.25 1.125-1.25s1.156 0.406 1.156 1.25z"
+          ></path>
+        </svg>
+      </button> 
+      </div>
+    </header>
+    <section id="home">
+      <div class="pdp" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+        <img src="Images/pdp 1.png" alt="" />
+      </div>
+      <div class="descri" data-aos="fade-left">
+        <p class="bonjour">
+          Bonjour, je suis
+          <br />
+          <span class="rktnr"
+            ><span class="safidy">safidy</span> rakotonirina</span
+          >
+        </p>
+        <p class="content-descri">
+          Je suis un développeur web <span id="anim"></span><br>Passionné par la création de sites modernes, performants et dynamiques.
+        </p>
+        <div class="btn-cv">
+          <button class="cv">
+            Telecharger CV <img src="Images/Icones/Telecharger.png" alt="" />
+          </button>
+          <a href="projet.html"
+            >Regarder mes projets <img src="Images/Icones/exporte.png" alt=""
+          /></a>
+        </div>
+        <div class="reseau">
+          <img src="Images/Icones/logos_whatsapp-icon.png" alt="" />
+          <img src="Images/Icones/logos_telegram.png" alt="" />
+          <img src="Images/Icones/logos_linkdin.png" alt="" />
+          <img src="Images/Icones/icon-park_github.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="moi">
+      <div class="apropos" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        <h2>A PROPOS DE MOI</h2>
+        <p>
+          Bonjour, je m’appelle Safidy et je suis un <span class="texte">développeur web</span> passionné .
+Je maîtrise plusieurs langages de programmation, dont <span class="texte">HTML</span>, <span class="texte">CSS</span>, <span class="texte">JavaScript</span> et <span class="texte">PHP</span>.<br> 
+Toujours curieux et motivé, j’aime découvrir de nouvelles technologies et m’investir pleinement dans le plaisir d’apprendre et de les maîtriser.
+        </p>
+      </div>
+      <div class="parcours" data-aos="zoom-out-left">
+        <h2 class="titre-parcours">formation</h2>
+        <div class="content-parcours"> 
+          <div class="education" data-aos="zoom-out">
+          <h2>Gasy Tech</h2>
+          <hr />
+          <div class="experience">
+            <p class="date">Dec 2024 -Mars 2025</p>
+            <p class="ecole">html/css/js/php</p>
+          </div>
+        </div>
+        
+          <div class="education" data-aos="zoom-out">
+          <h2>Grafikart</h2>
+          <hr />
+          <div class="experience">
+            <p class="date">2025</p>
+            <p class="ecole">Figma</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <section class="competance">
+      <div class="skills" data-aos="fade-up-right">
+        <h2 class="title-skill">skills</h2>
+        <div class="grid-skill">
+          <div class="skill-box">
+            <img src="Images/Icones/logos_html-5.png" alt="" class="img" />
+
+            <div class="detail-skill">
+              <p>HTML</p>
+              <div class="mesure">
+                <div class="fonce-html"></div>
+                <div class="claire-html"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <img src="Images/Icones/logos_css-3.png" alt="" class="img" />
+
+            <div class="detail-skill">
+              <p>CSS</p>
+              <div class="mesure">
+                <div class="fonce-css"></div>
+                <div class="claire-css"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <img src="Images/Icones/logos_javascript.png" alt="" class="img" />
+
+            <div class="detail-skill">
+              <p>JS</p>
+              <div class="mesure">
+                <div class="fonce-js"></div>
+                <div class="claire-js"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <img
+              src="Images/Icones/material-icon-theme_php.png"
+              alt=""
+              class="img"
+            />
+
+            <div class="detail-skill">
+              <p>PHP</p>
+              <div class="mesure">
+                <div class="fonce-php"></div>
+                <div class="claire-php"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <img src="Images/Icones/devicon_vscode.png" alt="" class="img" />
+
+            <div class="detail-skill">
+              <p>VS Code</p>
+              <div class="mesure">
+                <div class="fonce-vs"></div>
+                <div class="claire-vs"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <img src="Images/Icones/devicon_figma.png" alt="" class="img" />
+
+            <div class="detail-skill">
+              <p>Figma</p>
+              <div class="mesure">
+                <div class="fonce-figma"></div>
+                <div class="claire-figma"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projet" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+        <div class="box-projet" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <div class="content-projet">
+            <img
+              src="Images/Les grandes etapes de la gestion de projet web 1.png"
+              alt=""
+            />
+            <div class="descri-projet">
+              <h2 class="title-projet">Title projet</h2>
+              <p class="detail-projet">figlma, html, css, js, php, vs code</p>
+            </div>
+          </div>
+          <img src="Images/Icones/exporte.png" alt="" class="ouvrir" />
+        </div>
+
+        <div class="box-projet" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <div class="content-projet">
+            <img src="Images/images 1.png" alt="" />
+            <div class="descri-projet">
+              <h2 class="title-projet">Title projet</h2>
+              <p class="detail-projet">figlma, html, css, js, php, vs code</p>
+            </div>
+          </div>
+          <img src="Images/Icones/exporte.png" alt="" class="ouvrir" />
+        </div>
+
+        <div class="box-projet" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <div class="content-projet">
+            <img
+              src="Images/Les grandes etapes de la gestion de projet web 1.png"
+              alt=""
+            />
+            <div class="descri-projet">
+              <h2 class="title-projet">Title projet</h2>
+              <p class="detail-projet">figlma, html, css, js, php, vs code</p>
+            </div>
+          </div>
+          <img src="Images/Icones/exporte.png" alt="" class="ouvrir" />
+        </div>
+
+        <div class="box-projet" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+          <div class="content-projet">
+            <img src="Images/images 1.png" alt="" />
+            <div class="descri-projet">
+              <h2 class="title-projet">Title projet</h2>
+              <p class="detail-projet">figlma, html, css, js, php, vs code</p>
+            </div>
+          </div>
+          <img src="Images/Icones/exporte.png" alt="" class="ouvrir" />
+        </div>
+
+        <a href="projet.html" class="affiche-plus">Afficher plus</a>
+      </div>
+    </section>
+    <section class="send-message">
+      <div class="container-message" data-aos="zoom-in">
+        <h2 class="title-message">Send message</h2>
+        <form action="">
+          <div class="details-users">
+            <input type="text" placeholder="Votre nom ..." />
+            <input type="email" placeholder="Votre email ..." />
+            <input type="text" placeholder="Votre numero de telephone ..." />
+          </div>
+          <textarea
+            name=""
+            id=""
+            rows="8"
+            placeholder="Votre message"
+          ></textarea>
+        </form>
+        <button class="send">envoyer</button>
+      </div>
+    </section>
+    <footer>
+      <p>© Safidy Rakotonirina 2025</p>
+      <div class="icon">
+        <img src="Images/Icones/mdi_instagram.png" alt="" />
+        <img src="Images/Icones/ic_baseline-whatsapp.png" alt="" />
+        <img src="Images/Icones/icon-park-outline_github-one.png" alt="" />
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

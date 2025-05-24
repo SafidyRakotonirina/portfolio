@@ -1,0 +1,702 @@
+@media(max-width:768px){
+ 
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg: white;
+    --color: black;
+    --gray: rgba(128, 128, 128, 0.39);
+    --grayFonce: rgb(68, 67, 67);
+    --bleu: #001a61;
+    --content:#434344;
+    --content-box:rgb(228, 228, 230);
+
+    --bg-dark: #121212;
+    --color-dark: #e0e0e0;
+    --gray-dark: rgba(180, 180, 180, 0.4);
+    --grayFonce-dark: rgb(180, 180, 180);
+    --bleu-dark: #3a7bd5;
+    --content-dark:white;
+    --content-box-dark:#383737;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+body.dark-mode {
+    background-color: rgb(36, 35, 35);
+
+    --bg: var(--bg-dark);
+    --color: var(--color-dark);
+    --gray: var(--gray-dark);
+    --grayFonce: var(--grayFonce-dark);
+    --bleu: var(--bleu-dark);
+    --content: var(--content-dark);
+    --content-box:var(--content-box-dark);
+}
+
+
+/* corps de ton css, uniquement modifications de couleurs */
+header .logo .sr {
+    background: var(--gray);
+    color: var(--bleu);
+}
+
+.active {
+    border-bottom: solid var(--bleu);
+    /* background: var(--gray); */
+    color: var(--bleu);
+}
+
+.desactive {
+    color: var(--bleu);
+}
+
+header nav ul .desactive:hover {
+    border-bottom: solid var(--bleu);
+}
+
+#home .pdp img {
+    background: rgb(185, 181, 181); /* pas changé, tu peux aussi passer en variable si tu veux */
+}
+
+#home .descri .bonjour {
+    padding-bottom: 1vw;
+}
+
+#home .descri .bonjour .rktnr {
+    color: var(--gray);
+}
+
+#home .descri .bonjour .safidy {
+    color: var(--bleu);
+}
+
+#home .descri .content-descri {
+    color: var(--content);
+}
+
+#home .descri .btn-cv .cv {
+    background: var(--bleu);
+    color: white;
+}
+
+#home .descri .btn-cv a {
+    color: var(--bleu);
+}
+
+.moi .apropos h2 {
+    color: var(--bleu);
+}
+
+.moi .apropos p {
+    color: var(--grayFonce);
+}
+
+/* ... idem pour tout ce qui est couleur fixe à remplacer ... */
+
+.competance .skills .title-skill {
+    color: var(--bleu);
+}
+
+.competance .skills .grid-skill {
+    box-shadow: 0 0 .2vw .15vw var(--gray);
+}
+
+.competance .skills .grid-skill .skill-box .detail-skill p {
+    color: var(--content);
+}
+
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-html,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-css,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-js,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-php,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-vs,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-figma {
+    background: #B4D7F8; /* tu peux aussi passer en variable si tu veux */
+}
+
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-html,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-css,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-js,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-php,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-vs,
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-figma {
+    background: var(--bleu);
+}
+
+.competance .projet .box-projet {
+    background: var(--content-box);
+}
+
+.competance .projet .affiche-plus {
+    background: var(--bleu);
+    color: white;
+}
+
+.send-message .container-message .title-message {
+    color: var(--bleu);
+}
+.competance .projet .box-projet .content-projet .descri-projet h2{
+    color: var(--content);
+}
+.competance .projet .box-projet .content-projet .descri-projet p{
+    color: var(--content);
+}
+
+.send-message .container-message form .details-users input,
+.send-message .container-message form textarea {
+    background: var(--content-box);
+}
+
+.send-message .send {
+    background: var(--bleu);
+    color: white;
+}
+
+footer {
+    background: var(--bleu);
+}
+
+footer p {
+    color: white;
+}
+
+.texte {
+    color: #033cda;
+}
+
+#anim {
+    color: #033cda;
+    border-right: 2px solid rgb(8, 8, 8);
+}
+
+
+
+
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo .sr{
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    padding: .5vw;
+}
+header nav{
+    width: 80%;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li{
+    list-style: none;
+    padding: .5vw;
+    
+    border-bottom: solid transparent;
+    margin: 0 2vw;
+}
+.active{
+    border-radius: .2vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #001449;
+    padding: .5vw;
+}
+
+header nav ul .desactive:hover{
+    border-bottom: solid #001449;
+}
+header nav ul li a{
+    text-decoration:  none;
+    font-size: 2vw;
+}
+header .color{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .color svg{
+    width: 2vw;
+    height: 2vw;
+}
+#home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 2vw 0;
+}
+#home .pdp{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .pdp img{
+    width: 50%;
+    border-radius: 50%;
+}
+#home .descri {
+    width: 80%;
+}
+#home .descri .bonjour{
+    font-size: 2vw;
+    color: var(--content);
+}
+#home .descri .bonjour .rktnr{
+    font-size: 3.5vw;
+    text-transform: capitalize;
+    margin-top: 1vw;
+}
+#home .descri .bonjour .safidy{
+    font-weight: bold;
+}
+#home .descri .content-descri{
+    width: 100%;
+    font-size: 2vw;
+    font-family: arial;
+}
+#home .descri .btn-cv{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 1vw 0;
+}
+#home .descri .btn-cv .cv{
+    border: none;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3vw;
+    padding: .5vw 1vw;
+}
+#home .descri .btn-cv .cv img{
+    width: 2vw;
+    height: 2vw;
+    margin-left: 1vw;
+}
+#home .descri .btn-cv a{
+    text-decoration: none;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+}
+#home .descri .btn-cv a img{
+    width: 3vw;
+    height: 3vw;
+}
+#home .descri .reseau{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#home .descri .reseau img{
+    width: 2.5vw;
+    margin: .5vw;
+}
+.moi{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.moi .apropos{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.moi .apropos h2{
+    font-size: 3vw;
+}
+.moi .apropos p{
+    width: 80%;
+    font-family: arial;
+    font-size: 2vw;
+    text-align: justify;
+    margin: 1vw;
+    
+}
+.moi .parcours{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+.parcours .titre-parcours{
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: var(--content);
+
+}
+.moi .parcours .content-parcours{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--content);
+}
+.moi .parcours .education{
+    width: 100%;
+    height: 10vw;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.moi .parcours .education h2{
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+.moi .parcours .education hr{
+    width: 80%;
+    margin: .2vw 0;
+}
+.moi .parcours .education .experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .5vw;
+}
+.moi .parcours .education .experience .date{
+    font-size: 1.5vw;
+    margin-bottom: .5vw;
+    font-style: italic;
+}
+.moi .parcours .education .experience .ecole{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.competance{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 0;
+    flex-direction: column;
+}
+.competance .skills{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.competance .skills .title-skill{
+    font-size: 3.5vw;
+    text-transform: capitalize;
+}
+.competance .skills .grid-skill{
+    
+    width: 80%;
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    box-shadow: 0 0 .2vw .15vw grey;
+    border-radius: .5vw;
+    margin: 2vw 0 ;
+}
+.competance .skills .grid-skill .skill-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: .3vw;
+    padding: .5vw;
+}
+.competance .skills .grid-skill .skill-box:hover{
+    transform: scale(1.05);
+}
+.competance .skills .grid-skill .skill-box .img{
+    width: 3.5vw;
+    margin-right: 1vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill{
+    width: 70%;
+    height: 4vw;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.competance .skills .grid-skill .skill-box .detail-skill p{
+    font-size: 2vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure{
+    width: 100%;
+    margin: .5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-html{
+    width: 90%;
+    height:1vw;
+    border-radius: .5vw 0 0 .5vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-html{
+    width: 10%;
+    height:1vw;
+    border-radius: 0 .5vw .5vw 0;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-css{
+    width: 80%;
+    height:1vw;
+    border-radius: .5vw 0 0 .5vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-css{
+    width: 20%;
+    height:1vw;
+    border-radius: 0 .5vw .5vw 0;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-js{
+    width: 75%;
+    height:1vw;
+    border-radius: .5vw 0 0 .5vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-js{
+    width: 25%;
+    height:1vw;
+    border-radius: 0 .5vw .5vw 0;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-php{
+    width: 70%;
+    height:1vw;
+    border-radius: .5vw 0 0 .5vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-php{
+    width: 30%;
+    height:1vw;
+    border-radius: 0 .5vw .5vw 0;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-vs{
+    width: 85%;
+    height:1vw;
+    border-radius: .5vw 0 0 .5vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-vs{
+    width: 15%;
+    height:1vw;
+    border-radius: 0 .5vw .5vw 0;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-figma{
+    width: 75%;
+    height:1vw;
+    border-radius: .5vw 0 0 .5vw;
+}
+.competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-figma{
+    width: 25%;
+    height:1vw;
+    border-radius: 0 .5vw .5vw 0;
+}
+.competance .projet{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.competance .projet .box-projet{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+    border-radius: .3vw;
+    margin: .5vw 0;
+}
+.competance .projet .box-projet .content-projet{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.competance .projet .box-projet .content-projet img{
+    width: 5vw;
+    height: 6vw;
+    margin-right: 1vw;
+}
+.competance .projet .box-projet .content-projet .descri-projet{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+.competance .projet .box-projet:hover{
+    transform: scale(1.05);
+}
+.competance .projet .box-projet .content-projet .descri-projet h2{
+    font-size: 2.5vw;
+    font-style: italic;
+}
+.competance .projet .box-projet .content-projet .descri-projet p{
+    font-size: 1.8vw;
+    text-transform: capitalize;
+}
+.competance .projet .box-projet .ouvrir{
+    width: 3vw;
+    height: 3vw;
+}
+.competance .projet .affiche-plus{
+    width: 12vw;
+    height: 3.56vw;
+    border: none;
+    border-radius: .3vw;
+    font-size: 1.8vw;
+    margin-top: .5vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.send-message{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 0;
+}
+.send-message .container-message{
+    position: relative;
+    left: -1vw;
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.send-message .container-message .title-message{
+    font-size: 2vw;
+    
+}
+.send-message .container-message form{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1vw 0;
+}
+.send-message .container-message form .details-users{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.send-message .container-message form .details-users input{
+    width: 90%;
+    height: 3.5vw;
+    margin: .5vw 0 ;
+    padding: .2vw .5vw;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: .3vw;
+}
+.send-message .container-message form textarea{
+    width: 50%;
+    padding: .5vw;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: .3vw;
+}
+.send-message .send{
+    width: 9vw;
+    height: 3vw;
+    border: none;
+    border-radius: .3vw;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+}
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+}
+footer p{
+    font-size: 2vw;
+    font-weight: lighter;
+    font-style: italic;
+}
+footer .icon{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .icon img{
+    width: 2.5vw;
+}
+.texte{
+    font-weight: bold;
+}
+
+#anim {
+  font-weight: bold;
+  text-transform: uppercase;    
+  border-right: 2px solid rgb(8, 8, 8);
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#anim span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+#anim span.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+}
