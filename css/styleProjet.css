@@ -3,40 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-:root {
-    --bg: white;
-    --color: black;
-    --gray: rgba(128, 128, 128, 0.39);
-    --grayFonce: rgb(68, 67, 67);
-    --bleu: #001a61;
-    --content:#434344;
-    --content-box:rgb(228, 228, 230);
-
-    --bg-dark: #121212;
-    --color-dark: #e0e0e0;
-    --gray-dark: rgba(180, 180, 180, 0.4);
-    --grayFonce-dark: rgb(180, 180, 180);
-    --bleu-dark: #3a7bd5;
-    --content-dark:white;
-    --content-box-dark:#383737;
-}
-
 body {
-  background-color: white;
-  color: black;
-}
-body.dark-mode {
     background-color: rgb(36, 35, 35);
 
-    --bg: var(--bg-dark);
-    --color: var(--color-dark);
-    --gray: var(--gray-dark);
-    --grayFonce: var(--grayFonce-dark);
-    --bleu: var(--bleu-dark);
-    --content: var(--content-dark);
-    --content-box:var(--content-box-dark);
+    --bg: #121212;
+    --color: #e0e0e0;
+    --gray: rgba(180, 180, 180, 0.4);
+    --grayFonce: rgb(180, 180, 180);
+    --bleu: #3a7bd5;
+    --content:white;
+    --content-box:#383737;
 }
 
 header{
@@ -62,15 +38,11 @@ header .logo .sr{
 }
 .active {
     border-bottom: solid var(--bleu);
-    /* background: var(--gray); */
     color:var(--bleu);
 }
 .desactive {
     color: var(--bleu);
 }
-/* .desactive:hover {
-    border-bottom: solid var(--bleu);
-} */
 header nav{
     width: 80%;
 }
@@ -133,7 +105,7 @@ header .color svg{
   margin-bottom: 2vw;
 padding: 1vw;
 border-radius: 2vw 0 2vw 0;
-background: var(--gray);
+background: #292828;
 }
 .jaquette{
   width: 20%;
@@ -142,7 +114,7 @@ background: var(--gray);
   justify-content: center;
 }
 .jaquette img{
-  width: 100%;
+  width: 5vw;
 }
 .detail{
   width: 80%;
@@ -155,22 +127,23 @@ background: var(--gray);
   font-size: 2vw;
   text-transform: uppercase;
   margin-bottom: 1vw;
+  color: rgb(189, 182, 171);
 }
 .grid{
 display: flex;
 align-items: center;
-justify-content: center;  
+justify-content: space-around;  
 }
 .descri{
-  width: 40%;
+  width: 60%;
   margin-left: 2vw;
 }
 .descri p{
   font-size: 1.5vw;
-  color: var(--color);
+  color: var(--grayFonce);
 }
 .language-utilise{
-  width: 60%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -190,7 +163,7 @@ justify-content: center;
 }
 .utilise p{
   font-size: 1.2vw;
-  color: var(--color);
+  color: var(--grayFonce);
 
 }
 .btn{

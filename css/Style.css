@@ -4,43 +4,19 @@
     box-sizing: border-box;
 }
 
-
-:root {
-    --bg: white;
-    --color: black;
-    --gray: rgba(128, 128, 128, 0.39);
-    --grayFonce: rgb(68, 67, 67);
-    --bleu: #001a61;
-    --content:#434344;
-    --content-box:rgb(228, 228, 230);
-
-    --bg-dark: #121212;
-    --color-dark: #e0e0e0;
-    --gray-dark: rgba(180, 180, 180, 0.4);
-    --grayFonce-dark: rgb(180, 180, 180);
-    --bleu-dark: #3a7bd5;
-    --content-dark:white;
-    --content-box-dark:#383737;
-}
-
-body {
-  background-color: white;
-  color: black;
-}
-body.dark-mode {
+body{
     background-color: rgb(36, 35, 35);
 
-    --bg: var(--bg-dark);
-    --color: var(--color-dark);
-    --gray: var(--gray-dark);
-    --grayFonce: var(--grayFonce-dark);
-    --bleu: var(--bleu-dark);
-    --content: var(--content-dark);
-    --content-box:var(--content-box-dark);
+    --bg: #121212;
+    --color: #e0e0e0;
+    --gray: rgba(180, 180, 180, 0.4);
+    --grayFonce: rgb(180, 180, 180);
+    --bleu: #3a7bd5;
+    --content:white;
+    --content-box:#383737;
 }
 
 
-/* corps de ton css, uniquement modifications de couleurs */
 header .logo .sr {
     background: var(--gray);
     color: var(--bleu);
@@ -48,7 +24,6 @@ header .logo .sr {
 
 .active {
     border-bottom: solid var(--bleu);
-    /* background: var(--gray); */
     color: var(--bleu);
 }
 
@@ -61,10 +36,11 @@ header nav ul .desactive:hover {
 }
 
 #home .pdp img {
-    background: rgb(185, 181, 181); /* pas changé, tu peux aussi passer en variable si tu veux */
+    background: rgb(185, 181, 181);
 }
 
 #home .descri .bonjour {
+    color: var(--grayFonce);
     padding-bottom: 1vw;
 }
 
@@ -77,7 +53,7 @@ header nav ul .desactive:hover {
 }
 
 #home .descri .content-descri {
-    color: var(--content);
+    color: var(--grayFonce);
 }
 
 #home .descri .btn-cv .cv {
@@ -97,8 +73,6 @@ header nav ul .desactive:hover {
     color: var(--grayFonce);
 }
 
-/* ... idem pour tout ce qui est couleur fixe à remplacer ... */
-
 .competance .skills .title-skill {
     color: var(--bleu);
 }
@@ -108,7 +82,7 @@ header nav ul .desactive:hover {
 }
 
 .competance .skills .grid-skill .skill-box .detail-skill p {
-    color: var(--content);
+    color: var(--grayFonce);
 }
 
 .competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-html,
@@ -117,7 +91,7 @@ header nav ul .desactive:hover {
 .competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-php,
 .competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-vs,
 .competance .skills .grid-skill .skill-box .detail-skill .mesure .fonce-figma {
-    background: #B4D7F8; /* tu peux aussi passer en variable si tu veux */
+    background: #B4D7F8;
 }
 
 .competance .skills .grid-skill .skill-box .detail-skill .mesure .claire-html,
@@ -142,10 +116,10 @@ header nav ul .desactive:hover {
     color: var(--bleu);
 }
 .competance .projet .box-projet .content-projet .descri-projet h2{
-    color: var(--content);
+    color: var(--grayFonce);
 }
 .competance .projet .box-projet .content-projet .descri-projet p{
-    color: var(--content);
+    color: var(--grayFonce);
 }
 
 .send-message .container-message form .details-users input,
@@ -260,7 +234,7 @@ header .color svg{
 }
 #home .descri .bonjour{
     font-size: 1.5vw;
-    color: var(--content);
+    color: var(--grayFonce);
 }
 #home .descri .bonjour .rktnr{
     font-size: 2.5vw;
@@ -349,7 +323,7 @@ header .color svg{
 .parcours .titre-parcours{
     font-size: 1.8vw;
     text-transform: uppercase;
-    color: var(--content);
+    color: var(--grayFonce);
 
 }
 .moi .parcours .content-parcours{
@@ -357,7 +331,7 @@ header .color svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--content);
+    color: var(--grayFonce);
 }
 .moi .parcours .education{
     width: 30%;
@@ -521,6 +495,7 @@ header .color svg{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 2vw;
 }
 
 .competance .projet .box-projet{
@@ -530,7 +505,7 @@ header .color svg{
     justify-content: space-between;
     padding: 1vw;
     border-radius: .3vw;
-    margin: .5vw 0;
+    margin: 1vw 0;
 }
 .competance .projet .box-projet .content-projet{
     width: 85%;
